@@ -54,7 +54,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to do a bigger website with different pages, set different background and try to keep a good responsiveness between all the pages and sizes form mobile to desktop size.
+I learned how to do a bigger website with different pages, set different background and try to keep a good responsiveness between all the pages and sizes from mobile to desktop size.
 
 And set some transition with JS and CSS, when you click on an element.
 
