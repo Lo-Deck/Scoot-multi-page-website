@@ -1,0 +1,1257 @@
+:root{
+  --width-mobile: 19.4375rem;
+  --width-375px: 23.4375rem;
+  --size-688-1100: clamp(43rem, 13.5714rem + 61.3095vw, 68.75rem);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh; 
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  text-align: center;
+}
+
+.text{
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  color: #939CAA;
+}
+
+.text-bold{
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  color: #495567;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+}
+
+.button{
+  display: block;  
+  background: transparent;
+  border-style: none;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.button-more{
+  width: 11.25rem;
+  padding: 0.97rem 0;
+  background: #FCB72B;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  font-style: normal;
+  text-align: center;
+}
+
+.button-more:hover{
+  cursor: pointer;
+  background: transparent;
+  color: #FCB72B;
+  outline: #FCB72B solid 0.25rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.background{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.8);
+  position: absolute;
+}
+
+
+/*HEADER*/
+
+.header-container{
+  max-width: var(--width-mobile);
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem auto 1.5rem;
+  position: relative;
+}
+
+.button-menu{
+  width: 1.25rem;
+  height: 1rem;
+}
+
+.logo-brand{
+  width: 4.75rem;
+  height: 1.25rem;
+  margin: 0 auto;
+}
+
+
+/*MENU*/
+
+.menu{
+  display: none;
+  background: #333A44;
+  color: #fff;
+  width: 85%;
+  height: 100vh;
+  padding-left: 2rem;
+  position: absolute;
+    top: 2.75rem; left: -2rem;
+  z-index: 10;
+}
+
+.list-menu{
+  flex-direction: column;
+  margin-top: 4.375rem;
+  text-align: left;
+  color: #fff;
+}
+
+.li-menu{
+  margin-bottom: 1.875rem;
+}
+
+.li-menu:hover{
+  color: #FCB72B;
+}
+
+.menu .button-more{
+  margin-top: 16rem;
+}
+
+
+/*MAIN*/
+
+.main-container{
+  width: 100vw;
+  position: relative;
+}
+
+.presentation{
+  background: url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 17rem) 92%,  
+              url(./images/images/home-hero-mobile.jpg) no-repeat center / cover;
+  padding: 7.5rem 0 11.125rem;
+}
+
+.presentation-display-desktop{
+  max-width: var(--width-mobile);
+  margin: 0 auto;
+}
+
+.main-title{
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: -0.1125rem;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+.presentation .text{
+  color: #fff;
+  margin: 1.5rem auto 2.25rem;
+}
+
+.presentation .button-more{
+  margin: 0 auto;
+}
+
+
+/*SECTION-OPERATE*/
+
+.container-section-operate{
+  margin: 7.375rem auto 7.625rem;
+  max-width: var(--width-mobile);
+}
+
+.operate{
+  margin: 0 auto 3.25rem;
+}
+
+.operate-logo{
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+}
+
+.operate-title{
+  margin: 1.5rem 0;
+  letter-spacing: -0.05625rem;
+}
+
+
+/*EXPLANATION*/ 
+
+.container-section-explanation{
+  margin-top: 4.375rem;
+  background: url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 12rem) 10rem,
+              url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 9rem) 50rem,
+              url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 21rem) 101.5rem;
+}
+
+.explanation{
+  max-width: var(--width-mobile);
+  margin: 0 auto 7.5rem;
+}
+
+.image-explanation{
+  border-radius: 50%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+.explanation-title{
+  font-size: 2rem;
+  letter-spacing: -0.09rem;
+  line-height: 1;
+  margin: 3.625rem auto 2.125rem;
+}
+
+.explanation .button-more{
+  margin: 2rem auto 0;
+}
+
+
+/*FOOTER*/
+
+.footer-upper{
+  background: url(./images/patterns/semi-circles.svg) no-repeat calc(50% - 14rem) bottom,
+              #495567;
+  padding: 5rem 0 5.375rem;
+}
+
+.upper{
+  max-width: var(--width-mobile);
+  margin: 0 auto;
+}
+
+.footer-upper .explanation-title{
+  margin: 0 auto;
+  color: #fff;
+}
+
+.container-store{
+  margin: 2.2rem 0 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.store{
+  width: 7.125rem;
+  height: 2.5rem;
+}
+
+.container-store a:nth-of-type(2) .store{
+  width: 8.125rem;
+}
+
+.footer-bottom{
+  background: #333A44;
+  padding: 4rem 0 5.375rem;
+}
+
+.footer-logo{
+  fill: #fff;
+  margin-bottom: 2.875rem;
+}
+
+.list-footer{
+  flex-direction: column;
+  color: #939CAA;
+}
+
+.li-footer{
+  margin-bottom: 1rem;
+}
+
+.li-footer:hover{
+  color: #FCB72B;
+}
+
+.list-logo{
+  width: 7.75rem;
+  margin: 5rem auto 0;
+  justify-content: space-between;
+}
+
+.li-logo svg{
+  fill: #FCB72B;
+  margin: 0;
+}
+
+.li-logo:hover svg{
+  fill: #fff;
+}
+
+
+/**ABOUT PAGE**/
+
+.sub-page-title{
+  background: url(./images/images/about-hero-mobile.jpg) no-repeat center / cover;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-page-title .text-bold{
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: -0.1125rem;
+}
+
+.about-page .container-section-explanation{
+  background: url(./images/patterns/left-upward-arrow.svg) no-repeat calc(50% + 13rem) 8rem,
+              url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 4.3rem) 42rem;
+}
+
+
+/*ARTICLE*/
+
+.container-article{
+  max-width: var(--width-mobile);
+  margin: 0 auto;
+}
+
+.article-title{
+  font-size: 2rem;
+  letter-spacing: -0.09rem;
+  line-height: 1;
+  margin-bottom: 4.25rem;
+}
+
+.values{
+  margin: 0 0 3.625rem;
+  position: relative;
+}
+
+.image-values{
+  width: 15rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.thumbnail{
+  background: #FCB72B;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  letter-spacing: -0.06625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+    top: 12rem; left: calc(50% - 3rem);
+}
+
+.title-values{
+  font-size: 1.5rem;
+  letter-spacing: -0.06625rem;
+  margin: 4rem auto 2rem;
+}
+
+
+/*FAQS*/
+
+.container-article-faqs{
+  max-width: var(--width-mobile);
+  margin: 0 auto;
+}
+
+.article-faqs{
+  margin: 9.375rem auto 7.5rem;
+}
+
+.article-faqs .article-title{
+  max-width: var(--width-mobile);
+  margin: 0;
+}
+
+.article-faqs p{
+  margin-top: 2.2rem;
+}
+
+.section-faqs{
+  background: #F2F5F9;
+  margin-bottom: 1rem;
+  padding: 2.375rem 2rem;
+  text-align: left;
+}
+
+.section-faqs .text{
+  display: none;
+}
+
+.section-faqs:hover{
+  cursor: pointer;
+  background: hsla(40, 97%, 58%, 0.15);
+}
+
+.faqs-title{
+  font-size: 1.125rem;
+  letter-spacing: -0.05rem;
+  display: flex;
+  align-items: center;
+}
+
+.arrow{
+  display: block;
+  min-width: 1.2rem;
+  min-height: 0.6rem;
+  margin-left: 0.8rem;
+  background: url(./images/icons/chevron.svg) no-repeat center / 100%;
+}
+
+.section-faqs .text{
+  color: #495567;  
+}
+
+
+/**CAREERS PAGE**/
+
+.careers-page .sub-page-title{
+  background: url(./images/images/careers-location-hero-mobile.jpg) no-repeat center / cover;
+}
+
+.careers-page .container-section-explanation{
+  background: url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 13rem) 10rem;
+}
+
+/*JOB*/
+
+.container-section-job{
+  max-width: var(--width-mobile);
+  margin: 7.5rem auto;
+}
+
+.job{
+  background: #F2F5F9;
+  margin-bottom: 1rem;
+  padding: 2.5rem 2rem 2rem;
+}
+
+.title-job{
+  font-size: 1.125rem;
+  letter-spacing: -0.05rem;
+}
+
+.place.text{
+  color: #495567;
+}
+
+.job .button-more{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+/**LOCATIONS**/
+
+.locations-page .sub-page-title{
+  background: url(./images/images/careers-location-hero-mobile.jpg) no-repeat center / cover;
+}
+
+.image-map{
+  margin: 4.375rem auto 0;
+}
+
+.container-city{
+  max-width: var(--width-mobile);
+  margin: 2.5rem auto 4.75rem;
+}
+
+.city{
+  background: hsla(40, 97%, 58%, 0.15);
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.06625rem;
+  padding: 1.12rem 0;
+}
+
+.locations-page .explanation{
+  margin-bottom: 4.375rem;
+}
+
+
+/*ANIMATION*/
+
+.anim-height{
+  animation: smoothHeight 0.2s ease 1;
+}
+
+@keyframes smoothHeight{
+
+  0%{
+    transform: scale(1, 0);
+  }
+
+  100%{
+    transform: scale(1, 1);
+  }
+
+}
+
+
+@media screen and (min-width: 48rem){
+
+/*HEADER*/
+
+  .header-container{
+    max-width: var(--size-688-1100);
+    margin: 1.375rem auto;
+  }
+
+  .button-menu{
+    display: none;
+  }
+
+  .logo-brand{
+    width: 6.75rem;
+    height: 1.75rem;
+    margin: 0;
+  }
+
+  
+/*MENU*/
+
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #939CAA;
+    width: 100%;
+    height: auto;
+    margin-left: 3.625rem;
+    padding-left: 0;
+    position: relative;
+      top: 0; left: 0;
+  }
+
+  .list-menu{
+    flex-direction: row;
+    color: #939CAA;
+    margin-top: 0;
+  }
+
+  .li-menu{
+    margin: 0 2rem 0 0;
+  }
+
+  .menu .button-more{
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+
+/*MAIN*/
+
+  .presentation{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc(50% + 18.5rem) 92%,
+                url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 17rem) 92%,  
+                url(./images/images/home-hero-tablet.jpg) no-repeat center / cover;
+    height: 40.625rem;
+    padding: clamp(9rem, 7.8571rem + 2.381vw, 10rem) 0 clamp(9.5rem, 18.0714rem + -9.5238vw, 13.5rem) ;
+  }
+
+  .presentation-display-desktop{
+    max-width: 35.875rem;
+  }
+
+  .main-title{
+    font-size: 3.5rem;
+    letter-spacing: -0.15625rem;
+  }
+
+
+/*SECTION-OPERATE*/
+
+  .container-section-operate{
+    max-width: 35.875rem;
+    margin: clamp(7.625rem, 4.9107rem + 5.6548vw, 10rem) auto clamp(9rem, 5.1429rem + 8.0357vw, 12.375rem);
+  }
+
+  .operate{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(2, min-content);
+    text-align: left;
+    margin: 0 auto 2.5rem;
+  }
+
+  .operate-logo{
+    grid-column: 1;
+    grid-row: 1 / -1;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 4.875rem 0 0;
+  }
+
+  .operate-title{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 1.875rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.0668rem;
+  }
+
+  .operate .text{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+
+/*EXPLANATION*/
+
+  .container-section-explanation{
+    margin-bottom: clamp(6.5rem, -0.3571rem + 14.2857vw, 12.5rem);
+    background: url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 2rem) 18.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 33rem) 0,
+                url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 16rem) 60rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% - 32rem) 58rem,
+                url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 24rem) 122rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 33rem) 117.5rem;
+  }
+
+  .explanation{
+    max-width: 35.875rem;
+    margin: 0 auto 7.9375rem;
+  }
+
+  .image-explanation{
+    width: 27.8125rem;
+  }
+
+  .explanation-title{
+    font-size: 3rem;
+    letter-spacing: -0.144rem;
+    margin: 3.625rem auto 2.75rem; 
+    padding: 0 3rem;
+  }
+
+  .explanation .button-more{
+    margin: 2.75rem auto 0;
+  }
+
+  
+/*FOOTER*/
+
+  .footer-container{
+    background: #333A44;
+  }
+
+  .footer-upper{
+    background: url(./images/patterns/semi-circles.svg) no-repeat center bottom,
+              #495567;
+    padding: 4.125rem 0 3.75rem;
+  }
+
+  .upper{
+    max-width: 35.875rem;
+  }
+
+  .footer-upper .explanation-title{
+    padding: 0 4rem;
+  }
+
+  .container-store{
+    margin: 2.625rem 0 0;
+  }
+
+  .footer-bottom{
+    max-width: var(--size-688-1100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem 0 1.875rem;
+    margin: 0 auto;
+  }
+
+  .footer-logo{
+    width: 6.75rem;
+    height: 1.75rem;
+    margin: 0;
+  }
+
+  .list-footer{
+    flex-direction: row;
+    margin-left: 3.625rem;
+  }
+
+  .li-footer{
+    margin: 0 2rem 0 0;
+  }
+
+  .list-logo{
+    margin: 0 0 0 auto;
+  }
+
+
+/**ABOUT PAGE 768PX**/
+
+  .sub-page-title{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc( 50% + clamp(18.5rem, -5.5rem + 50vw, 39.5rem) ) center ,
+                url(./images/images/about-hero-tablet.jpg) no-repeat center / cover;
+    height: 12.5rem;
+  }
+
+  .sub-page-title .text-bold{
+    width: var(--size-688-1100);
+    font-size: 3.5rem;
+    letter-spacing: -0.15625rem;
+    text-align: left;    
+  }
+  
+  .about-page .container-section-explanation{
+    margin-top: clamp(7.5rem, 10.4464rem + -3.2738vw, 8.875rem);
+    margin-bottom: 7.875rem;
+    background: url(./images/patterns/left-upward-arrow.svg) no-repeat calc(50% + 1.8rem) 16.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 32rem) 0,
+                url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 16.5rem) 51rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 32rem) 50.8rem;
+  }
+
+
+  /*ARTICLE*/
+
+  .container-article{
+    max-width: 28.5625rem;
+  }
+
+  .article-title{
+    font-size: 3rem;
+    letter-spacing: -0.134rem;
+    margin-bottom: 6.875rem;
+  }
+
+  .title-values{
+    margin: 4.5rem auto 1.5rem;
+  }
+
+
+/*FAQS*/
+
+  .container-article-faqs.article-faqs{
+    max-width: 43.0625rem;
+  }
+
+  .article-faqs .article-title{
+    margin: 0 auto;
+  }
+
+  .article-faqs .title-values{
+    font-size: 2.5rem;
+    letter-spacing: -0.1125rem;
+    margin: 4.375rem 0 2.5rem;
+  }
+
+  .section-faqs{
+    margin-bottom: 1rem;
+  }
+
+  .faqs-title{
+    justify-content: space-between;
+    font-size: 1.5rem;
+    letter-spacing: -0.0668rem;
+  }
+
+
+/**CAREERS PAGE 768PX**/
+
+  .careers-page .sub-page-title{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc( 50% + clamp(18.5rem, -5.5rem + 50vw, 39.5rem) ) center ,
+                url(./images/images/careers-locations-hero-tablet.jpg) no-repeat center / cover;
+    height: 12.5rem;
+  }
+
+  .careers-page .container-section-explanation{
+    background: url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 1rem) 18.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 33rem) 0;
+  }
+
+/*JOB*/
+
+  .container-section-job{
+    max-width: clamp(43.125rem, 13.125rem + 62.5vw, 69.375rem);
+    margin-bottom: clamp(7.5rem, 6.6304rem + 4.3478vw, 10rem);
+  }
+
+  .job{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));  /*   */
+    grid-template-rows: repeat(2, min-content);
+    justify-content: space-between;
+    text-align: left;
+    padding: 2.375rem 3rem;
+  }
+
+  .title-job{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.5rem;
+    letter-spacing: -0.0668rem;
+    line-height: 1.3;
+  }
+
+  .place.text{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .job .button-more{
+    grid-column: 2;
+    grid-row: 1 / -1;
+    width: 11.25rem;
+    height: 3.3125rem;
+    margin: 0;
+  }
+
+
+/**LOCATIONS**/
+
+  .locations-page .sub-page-title{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc( 50% + clamp(18.5rem, -5.5rem + 50vw, 39.5rem) ) center ,
+                url(./images/images/careers-locations-hero-tablet.jpg) no-repeat center / cover;
+    height: 12.5rem;
+  }
+
+  .display-city{
+    position: relative;
+    width: 48rem;
+    margin: 0 auto;
+  }
+
+  .image-map{
+    margin: 8.75rem auto 0;
+  }
+
+  .city{
+    background: hsl(40, 97%, 58%);
+    margin: 0;
+    padding: 0.4rem 1rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.0362rem;
+    width: 7.5rem;
+    position: relative;
+  }
+
+  .city::after{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 0.5rem;
+    background: hsl(40, 97%, 58%);
+    position: absolute;
+      bottom: -0.5rem; left: calc(50% - 0.5rem);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+  }
+
+  .city:nth-of-type(1){
+    position: absolute;
+      top: 4rem; left: 7rem;
+  }
+
+  .city:nth-of-type(2){
+    position: absolute;
+      top: 1.9rem; left: 17.7rem;
+  }
+
+  .city:nth-of-type(3){
+    position: absolute;
+      top: 12rem; left: 34rem;
+  }
+  
+  .city:nth-of-type(4){
+    position: absolute;
+      top: 4.6rem; left: 37.2rem;
+  }
+
+  .locations-page .explanation{
+    margin-bottom: 7.375rem;
+  }
+
+}
+
+
+
+/***1440PX***/
+
+@media screen and (min-width: 90rem){
+
+
+/*MAIN*/
+
+  .presentation{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc(50% + 40.5rem) 68%,
+                url(./images/patterns/right-arrow.svg) no-repeat calc(50% + 15rem) 65%,  
+                url(./images/images/home-hero-tablet.jpg) no-repeat center / cover;
+    text-align: left;
+    margin: 0;
+  }
+
+  .presentation-display-desktop{
+    max-width: 68.75rem;
+    margin: 0 auto;
+  }
+
+  .main-title{
+    max-width: 35.875rem;
+    margin: 0;
+  }
+
+  .presentation .text{
+    max-width: 32rem;
+    margin: 1.5rem 0 2.25rem;
+    padding-left: 5.875rem;
+  }
+
+  .presentation .button-more{
+    margin: 0 0 0 5.875rem;
+  }
+
+
+/*SECTION-OPERATE*/
+
+  .container-section-operate{
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+  }
+
+  .operate{
+    display: block;
+    margin-right: 0.5rem;
+  }
+
+  .operate-logo{
+    margin: 0 0 2.75rem 0;
+  }
+
+  .operate-title{
+    margin: 0 0 2.25rem;
+  }
+
+
+/*EXPLANATION*/
+
+  .container-section-explanation{
+    background: url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 22rem) 18.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 53rem) 0,
+                url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 37rem) 38rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% - 52rem) 38rem,
+                url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 45rem) 80rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 52rem) 76rem;
+  }
+
+  .explanation{
+    max-width: 69.375rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    align-items: center;
+    text-align: left;
+    margin: 0 auto 10rem;
+  }
+
+  .image-explanation{
+    grid-column: 2;
+    grid-row: 1 / -1;
+    margin: 0 0 0 auto;
+  }
+
+  .explanation-title{
+    width: 27.8125rem;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    margin: 0;
+    padding: 0;
+  }
+
+  .explanation .text{
+    width: 27.8125rem;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .explanation .button-more{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+    margin: 0;
+  }
+
+  .explanation:nth-of-type(2) .image-explanation{
+    grid-column: 1;
+    grid-row: 1 / -1;
+    margin: 0 auto 0 0;
+  }
+
+  .explanation:nth-of-type(2) .explanation-title{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .explanation:nth-of-type(2) .text{
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .explanation:nth-of-type(2) .button-more{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: start;
+    margin-left: 6.8rem;
+  }
+
+
+/*FOOTER*/
+
+  .footer-upper{
+    background: url(./images/patterns/semi-circles.svg) no-repeat calc(50% + 18rem) bottom,
+              #495567;
+    padding: 6.875rem 0 6rem;
+  }
+
+  .upper{
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-upper .explanation-title{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-store{
+    margin: 0;
+  }
+
+  .store{
+    width: 9.9375rem;
+    height: 3.5rem;
+  }
+
+  .container-store a:nth-of-type(2) .store{
+    width: 11.375rem;
+  }
+
+
+/**ABOUT PAGE 1440PX*/
+
+  .sub-page-title{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc( 50% + clamp(18.5rem, -5.5rem + 50vw, 39.5rem) ) center ,
+                url(./images/images/about-hero-desktop.jpg) no-repeat center / cover;
+  }
+
+
+/*EXPLANATION*/
+
+  .about-page .container-section-explanation{
+    background: url(./images/patterns/left-upward-arrow.svg) no-repeat calc(50% + 22rem) 16.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 52rem) 0,
+                url(./images/patterns/right-arrow.svg) no-repeat calc(50% - 37rem) 37.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% - 52rem) 37.5rem;
+
+  }
+
+  .about-page .explanation{
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  .explanation-title{
+    margin-bottom: 2rem;
+  }
+
+  .about-page .explanation .text{
+    align-self: start;
+  }
+
+
+/*ARTICLE*/
+
+  .container-article{
+    max-width: 69.375rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 2rem;
+  }
+  
+  .article-title{
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .values{
+    margin: 0;
+    max-width: 21.875rem;
+    grid-row: 2;
+  }
+
+
+/*FAQS*/
+
+  .container-article-faqs.article-faqs{
+    max-width: 69.375rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(7, min-content);
+    justify-content: space-between;
+  }
+
+  .article-faqs{
+    margin: 8rem auto 10rem;
+  }
+
+  .article-faqs .article-title{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-bottom: 3.75rem;
+  }
+
+  .article-faqs .title-values{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .article-faqs .title-values:nth-of-type(2){
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .section-faqs{
+    width: 45.625rem;
+    grid-column: 2;
+  }
+
+
+/**CAREERS PAGE 1440PX**/
+
+  .careers-page .sub-page-title{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc( 50% + clamp(18.5rem, -5.5rem + 50vw, 39.5rem) ) center ,
+                url(./images/images/careers-locations-hero-desktop.jpg) no-repeat center / cover;
+    height: 12.5rem;
+  }
+
+  .careers-page .container-section-explanation{
+    background: url(./images/patterns/left-downward-arrow.svg) no-repeat calc(50% + 22rem) 18.5rem,
+                url(./images/patterns/circle.svg) no-repeat calc(50% + 53rem) 0;
+  }
+
+
+/**LOCATIONS**/
+
+  .locations-page .sub-page-title{
+    background: url(./images/patterns/white-circles.svg) no-repeat calc( 50% + clamp(18.5rem, -5.5rem + 50vw, 39.5rem) ) center ,
+                url(./images/images/careers-locations-hero-desktop.jpg) no-repeat center / cover;
+    height: 12.5rem;
+  }
+
+  .display-city{
+    width: 69.375rem;
+  }
+
+  .city{
+    font-size: 1.5rem;
+    letter-spacing: 0.06625rem;
+    width: 11.875rem;
+    padding: 01rem 1rem;
+  }
+
+  .city::after{
+    width: 2rem;
+    height: 1rem;
+    position: absolute;
+      bottom: -1rem; left: calc(50% - 1rem);
+  }
+
+  .city:nth-of-type(1){
+    position: absolute;
+      top: 4rem; left: 10rem; 
+  }
+
+  .city:nth-of-type(2){
+    position: absolute;
+      top: 1.4rem; left: 25.2rem;
+  }
+
+  .city:nth-of-type(3){
+    position: absolute;
+      top: 16rem; left: 49rem; 
+  }
+
+  .city:nth-of-type(4){
+    position: absolute;
+      top: 4.6rem; left: 54rem;
+  }
+
+  .locations-page .explanation{
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .locations-page .explanation .explanation-title{
+    margin: 0;
+    max-width: 21rem;
+  }
+
+  .locations-page .explanation .text{
+    margin: 0;
+  }
+
+  .locations-page .explanation .button-more{
+    margin: 0;
+    align-self: center;
+  }
+
+}
