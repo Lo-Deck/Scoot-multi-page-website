@@ -920,7 +920,7 @@ a{
   .presentation{
     background: url(./images/patterns/white-circles.svg) no-repeat calc(50% + 40.5rem) 68%,
                 url(./images/patterns/right-arrow.svg) no-repeat calc(50% + 15rem) 65%,  
-                url(./images/images/home-hero-tablet.jpg) no-repeat center / cover;
+                url(./images/images/home-hero-desktop.jpg) no-repeat center / cover;
     text-align: left;
     margin: 0;
   }
